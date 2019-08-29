@@ -22,6 +22,7 @@ RUN apt-get -y install vim
 RUN apt-get -y install postgresql
 RUN apt-get -y install nginx
 RUN apt-get -y install rsync
+RUN apt-get -y install nfs-common
 
 # setup locales
 RUN sed -i -e 's/# en_GB.UTF-8 UTF-8/en_GB.UTF-8 UTF-8/' /etc/locale.gen && locale-gen
