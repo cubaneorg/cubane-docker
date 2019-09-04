@@ -24,7 +24,7 @@ RUN apt-get -y install nginx
 RUN apt-get -y install rsync
 RUN apt-get -y install nfs-common
 RUN apt-get -y install sshfs
-RUN apt-get -y install postifx
+RUN apt-get -y install postfix
 
 # setup locales
 RUN sed -i -e 's/# en_GB.UTF-8 UTF-8/en_GB.UTF-8 UTF-8/' /etc/locale.gen && locale-gen
